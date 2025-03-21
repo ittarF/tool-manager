@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "string_param": {
+            "type": "string",
+            "description": "A string parameter example"
+        },
+        "integer_param": {
+            "type": "integer",
+            "description": "An integer parameter example",
+            "default": 10
+        },
+        "boolean_param": {
+            "type": "boolean",
+            "description": "A boolean parameter example",
+            "default": false
+        },
+        "object_param": {
+            "type": "object",
+            "description": "A nested object parameter example",
+            "properties": {
+                "enum_param": {
+                    "type": "string",
+                    "description": "An enum parameter with predefined values",
+                    "enum": ["option1", "option2", "option3", "option4"]
+                },
+                "default_string_param": {
+                    "type": "string",
+                    "description": "A string parameter with default value",
+                    "default": "default_value"
+                }
+            }
+        }
+    },
+    "required": ["string_param"]
+} 
